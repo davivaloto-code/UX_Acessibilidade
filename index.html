@@ -1,8 +1,85 @@
-<html>
-    <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"
-<title>Segurança Digital para Idosos</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Projeto de UX e acessibilidade com foco em interfaces inclusivas e acessíveis para todos."
+    >
+    <title>UX e Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">UX e acessibilidade</p>
+        <h1>Desenvolvendo interfaces inclusivas para todos</h1>
+        <p class="hero__text">
+          Boas experiências digitais são aquelas que combinam clareza, eficiência e
+          respeito às diferentes formas de interagir com a tecnologia.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#principios">Ver princípios</a>
+          <button id="theme-toggle" class="button button--secondary" type="button" aria-pressed="false">
+            Ativar alto contraste
+          </button>
+        </div>
+        <p class="hero__note">Design acessível, foco visível e navegação por teclado.</p>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title">Por que isso importa?</h2>
+        <p>
+          Interfaces inclusivas ajudam pessoas com diferentes perfis, limitações e
+          contextos a compreenderem, navegarem e concluírem tarefas com autonomia.
+        </p>
+      </section>
+
+      <section id="principios" class="cards" aria-label="Princípios de UX e acessibilidade">
+        <article class="card">
+          <h3>Perceptível</h3>
+          <p>Informações e componentes devem ser apresentados de forma clara e legível.</p>
+        </article>
+        <article class="card">
+          <h3>Operável</h3>
+          <p>Usuários devem conseguir navegar sem barreiras, com teclado e controles intuitivos.</p>
+        </article>
+        <article class="card">
+          <h3>Compreensível</h3>
+          <p>As interações devem ser simples, previsíveis e fáceis de entender.</p>
+        </article>
+        <article class="card">
+          <h3>Robusto</h3>
+          <p>O conteúdo precisa funcionar bem em diferentes tecnologias e dispositivos.</p>
+        </article>
+      </section>
+
+      <section class="checklist" aria-labelledby="checklist-title">
+        <h2 id="checklist-title">Checklist rápido</h2>
+        <ul>
+          <li>Use contraste adequado entre texto e fundo.</li>
+          <li>Garanta foco visível em links e botões.</li>
+          <li>Escreva textos curtos e objetivos.</li>
+          <li>Ofereça alternativas para conteúdo visual e multimídia.</li>
+        </ul>
+      </section>
+
+      <section class="quote" aria-labelledby="quote-title">
+        <h2 id="quote-title">Uma reflexão</h2>
+        <blockquote>
+          “Acessibilidade não é um detalhe opcional; é uma forma de respeitar e ampliar o acesso de todos à informação.”
+        </blockquote>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Projeto desenvolvido para demonstrar princípios de UX e acessibilidade.</p>
+    </footer>
+  </body>
 </html>
